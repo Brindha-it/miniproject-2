@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Campus Access</title>
+<!-- Google Fonts for icons -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons" />
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #fff;
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  }
+
+  .icon {
+    font-family: 'Material Icons';
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* Colors for each card */
+  .student {
+    background-color: #ffd700; /* Gold */
+    color: #fff;
+  }
+
+  .visitor {
+    background-color: #ff6347; /* Tomato */
+    color: #fff;
+  }
+
+  @media(max-width: 500px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Campus Access Portal</h1>
+
+<div class="cards-container">
+  <a href="student_login.html" class="card student">
+    <span class="material-icons icon">school</span>
+    <div class="label">STUDENT</div>
+  </a>
+  <a href="visitor_login.html" class="card visitor">
+    <span class="material-icons icon">people</span>
+    <div class="label">VISITOR</div>
+  </a>
+</div>
+</body>
+</html>
